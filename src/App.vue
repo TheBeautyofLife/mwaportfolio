@@ -9,13 +9,17 @@
      <router-view/>
      </transition>
     </v-content>
+    <Footer/>
   </v-app>
 </template>
 <script>
 import Header from '@/components/Head.vue'
+import Footer from '@/components/Foot.vue'
+
 export default {
    components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>

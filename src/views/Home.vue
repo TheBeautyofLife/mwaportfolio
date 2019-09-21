@@ -8,7 +8,7 @@
           <v-card flat color="transparent">
             <v-layout column justify-center align-center>
               <div v-if="ifClicked">
-              <img height="300" src="../assets/Screenshot_20190919-144331_Gallery.jpg"/>
+              <img height="300" :src="mwa"/>
               </div>
         
             <v-card-title primary-title>
@@ -57,7 +57,8 @@ export default {
       ifClicked: false,
       svgPath: mdiMouse,
       iconPath: mdiChevronRight,
-      title: 'Home'
+      title: 'Home',
+      mwa:'https://ik.imagekit.io/qpt2onjfe/mwa/Screenshot_20190919-144331_Gallery_z9nY3Wj7b.jpg'
     }),
 
   components: {
