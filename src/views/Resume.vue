@@ -39,7 +39,7 @@
                <div class="subtitle font-weight-regular">
                 I am very passionate in work assignments<br />
                 I have exceptional skills in garden maintainace, interior and exterior wall painting <br />
-                I am an excellent driving skills with 19years experience of driving on our ever busy Kenyan roads.
+                I have excellent driving skills, with 19years experience of driving on our ever busy Kenyan roads.
               </div>
              </v-card-text>
           </v-layout>
