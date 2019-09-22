@@ -17,7 +17,7 @@ import Header from '@/components/Head.vue'
 import Footer from '@/components/Foot.vue'
 
 export default {
-   components: {
+  components: {
     Header,
     Footer
   }

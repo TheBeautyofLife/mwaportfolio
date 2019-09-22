@@ -5,24 +5,24 @@
     <v-layout row justify-center align-center>
        <v-btn text to="/" style="margin-top:10%;">
         <v-icon   color="orange"> {{ svgPath }}</v-icon>
-          Back 
+          Back
       </v-btn>
         <!-- -->
         <v-layout  column justify-center align-center>
           <v-card flat color="transparent">
             <v-layout column justify-center align-center>
-            
+
             <v-card-text primary-title>
                <div class="title font-weight-regula">
                  DATE OF BIRTH: 1ST January 1973 <br />
-                  RELIGION: Christian 
+                  RELIGION: Christian
 
                </div>
              </v-card-text>
 
             <v-card-text primary-title>
                <div class="title font-weight-regula">
-                   AREAS OF EXPERTISE 
+                   AREAS OF EXPERTISE
                </div>
                <div class="subtitle font-weight-regular">
                  Driving : 19 year’s experience in driving private saloon cars  <br />
@@ -57,19 +57,19 @@
 import { mdiChevronLeft } from '@mdi/js'
 
 export default {
-  
-   data: () => ({
-      ifClicked: false,
-      svgPath: mdiChevronLeft,
-      title: 'Resume'
-    }),
-  
+
+  data: () => ({
+    ifClicked: false,
+    svgPath: mdiChevronLeft,
+    title: 'Resume'
+  }),
+
   head: {
     // To use "this" in the component, it is necessary to return the object through a function
     title: function () {
       return {
-        inner:"Jackson Maweu",
-       complement: this.title
+        inner: 'Jackson Maweu',
+        complement: this.title
       }
     },
     meta: [

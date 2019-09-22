@@ -12,7 +12,7 @@
              <v-btn small to="/" text>Home</v-btn>
              <v-btn small  to="/porfolio" text>My work</v-btn>
              <v-btn small  to="/contact" outlined>Contact</v-btn>
-            
+
           </v-layout>
 
        <v-layout justify-end hidden-sm-and-up>
@@ -41,23 +41,21 @@
   </v-content>
   </template>
 
- <script>
-   import { mdiMenu } from '@mdi/js'
+<script>
+import { mdiMenu } from '@mdi/js'
 
-   export default {
-     data: () => ({
-      ifClicked: false,
-      svgPath: mdiMenu,
-      links: [
-        { title: 'Home', to:"/"  },
-        { title: 'My work', to:"/porfolio" },
-        { title: 'contact', to:"/contact" },
-      ],
-    })
-   }
-   </script>
-   
- </script>
+export default {
+  data: () => ({
+    ifClicked: false,
+    svgPath: mdiMenu,
+    links: [
+      { title: 'Home', to: '/' },
+      { title: 'My work', to: '/porfolio' },
+      { title: 'contact', to: '/contact' }
+    ]
+  })
+}
+</script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
@@ -65,6 +63,5 @@
 .title_ {
     font-family: 'Abril Fatface', cursive;
 }
-
 
 </style>

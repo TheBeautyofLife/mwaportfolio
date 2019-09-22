@@ -15,7 +15,7 @@
                <div class="title">
                  <a href="tel:+254723144308" class="orange--text text--darken-3"> 0723144308 </a>
               </div>
-             
+
              </v-card-text>
           </v-layout>
       </v-card>
@@ -33,16 +33,16 @@
 <script>
 export default {
   data: () => ({
-      
-       title: 'Contact me'
-    }
+
+    title: 'Contact me'
+  }
   ),
- head: {
+  head: {
     // To use "this" in the component, it is necessary to return the object through a function
     title: function () {
       return {
-        inner:"Jackson Maweu",
-       complement: this.title
+        inner: 'Jackson Maweu',
+        complement: this.title
       }
     },
     meta: [

@@ -2,6 +2,7 @@
  <v-content>
   <!-- -->
   <v-container grid-list-sm>
+     <!-- Main content -->
     <v-layout row justify-center align-center>
         <!-- -->
         <v-layout  column justify-center align-center>
@@ -10,7 +11,7 @@
               <div v-if="ifClicked">
               <img height="300" :src="mwa"/>
               </div>
-        
+
             <v-card-title primary-title>
              <div class="display-2">
                  Hi,
@@ -21,7 +22,7 @@
                  I'm Jackson Maweu
               </div>
               <div class="title text-center font-weight-regular">
-                 a gardener 
+                 a gardener
               </div>
              </v-card-text>
           </v-layout>
@@ -40,7 +41,7 @@
       </v-card>
       </v-layout>
       <v-btn text to="/resume" style="margin-top:10%;">
-         About me 
+         About me
         <v-icon   color="orange"> {{ iconPath }}</v-icon>
       </v-btn>
   </v-layout>
@@ -50,27 +51,23 @@
 
 <script>
 import { mdiMouse, mdiChevronRight } from '@mdi/js'
-import  Resume from './Resume'
 
 export default {
-   data: () => ({
-      ifClicked: false,
-      svgPath: mdiMouse,
-      iconPath: mdiChevronRight,
-      title: 'Home',
-      mwa:'https://ik.imagekit.io/qpt2onjfe/mwa/Screenshot_20190919-144331_Gallery_z9nY3Wj7b.jpg'
-    }),
+  data: () => ({
+    ifClicked: false,
+    svgPath: mdiMouse,
+    iconPath: mdiChevronRight,
+    title: 'Home',
+    mwa: 'https://ik.imagekit.io/qpt2onjfe/mwa/Screenshot_20190919-144331_Gallery_z9nY3Wj7b.jpg',
 
-  components: {
-      Resume
-  },
+  }),
 
   head: {
     // To use "this" in the component, it is necessary to return the object through a function
     title: function () {
       return {
-        inner:"Jackson Maweu",
-       complement: this.title
+        inner: 'Jackson Maweu',
+        complement: this.title
       }
     },
     meta: [
@@ -81,7 +78,13 @@ export default {
 }
 </script>
 
-
 <style scoped>
 @import '../assets/animate.css';
+
+.image {
+  position: fixed;
+   z-index: -1;
+   bottom: 10px;
+
+}
 </style>
